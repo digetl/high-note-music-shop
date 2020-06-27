@@ -11,13 +11,13 @@ public class PercussionInstTest {
 
     @Before
     public void setUp() {
-        snaredrum = new Percussion("LudwigBasic", PercussionInst.SNAREDRUM1);
+        snaredrum = new Percussion("Ludwig big snare", PercussionInst.SNAREDRUM1);
     }
 
 
     @Test
-    public void getBrand() {
-        assertEquals("LudwigBasic",snaredrum.getName());
+    public void getName() {
+        assertEquals("Ludwig big snare",snaredrum.getName());
     }
 
     @Test
@@ -46,4 +46,11 @@ public class PercussionInstTest {
         assertEquals(200, snaredrum.getPercussionInst().getRrpPrice(),0.01);
     }
 
+    @Test
+    public void values() {
+    }
+
+    @Test
+    public void valueOf() {
+    }
 }

@@ -4,21 +4,17 @@ import Items.Instrument;
 
 public class Percussion extends Instrument {
 
-    private String name;
+
     private PercussionInst percussionInst;
 
+
     public Percussion(String name, PercussionInst percussionInst) {
-        this.name = name;
+        super(name);
+
         this.percussionInst = percussionInst;
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public PercussionInst getPercussionInst() {
         return percussionInst;
