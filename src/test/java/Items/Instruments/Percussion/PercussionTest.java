@@ -25,4 +25,9 @@ public class PercussionTest {
         assertEquals("Ludwig bad boy2", snaredrum.getName());
     }
 
+    @Test
+    public void getPercussionInst() {
+        assertEquals(PercussionInst.SNAREDRUM2, snaredrum.getPercussionInst());
+    }
+
 }
