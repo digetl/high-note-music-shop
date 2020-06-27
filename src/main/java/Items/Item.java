@@ -1,6 +1,8 @@
 package Items;
 
-public class Item{
+import Behaviours.ISell;
+
+public class Item {
 
 
     private String name;
@@ -17,6 +19,5 @@ public class Item{
     public void setName(String name) {
         this.name = name;
     }
-
 
 }

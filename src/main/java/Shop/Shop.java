@@ -32,6 +32,6 @@ public class Shop implements ISell {
     }
 
     public Double calculateMarkup(Item item) {
-        return 0.00;
+        return ;
     }
 }
