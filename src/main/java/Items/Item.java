@@ -3,7 +3,7 @@ package Items;
 
 import Shop.Shop;
 
-public class Item extends Shop{
+public class Item{
 
 
     private String name;

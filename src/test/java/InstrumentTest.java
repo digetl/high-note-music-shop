@@ -13,11 +13,11 @@ public class InstrumentTest {
 //         instrument1 = new Instrument();
 //    }
 
-
-    @Test
-    public void canPlaySound(){
-        assertEquals("Toot", instrument1.playSound("Toot"));
-    }
+//
+//    @Test
+//    public void canPlaySound(){
+//        assertEquals("Toot", instrument1.playSound("Toot"));
+//    }
 
 
 
