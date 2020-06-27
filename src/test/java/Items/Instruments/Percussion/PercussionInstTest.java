@@ -37,17 +37,13 @@ public class PercussionInstTest {
 
     @Test
     public void getWholesalePrice() {
+        assertEquals(100, snaredrum.getPercussionInst().getWholesalePrice(),0.01);
     }
+
 
     @Test
     public void getRrpPrice() {
+        assertEquals(200, snaredrum.getPercussionInst().getRrpPrice(),0.01);
     }
 
-    @Test
-    public void values() {
-    }
-
-    @Test
-    public void valueOf() {
-    }
 }
