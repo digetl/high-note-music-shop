@@ -1,8 +1,8 @@
-package Items.Intruments.Percussion;
+package Items.Instruments.Percussion;
 
 public enum PercussionInst {
-    SNAREDRUM1("Ludwig", 14, 7, "Bronze Beauty", 100.00, 200.00),
-    SNAREDRUM2("Gretsch", 14, 7, "Bronze Beauty", 80.00, 160.00);
+    SNAREDRUM1("Ludwig", 14, 7, "Basic Snare", 100.00, 200.00),
+    SNAREDRUM2("Gretsch", 14, 7, "Great all rounder", 80.00, 160.00);
 
     private final String brand;
     private final int width;
