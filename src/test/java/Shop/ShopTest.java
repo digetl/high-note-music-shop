@@ -41,4 +41,9 @@ public class ShopTest {
 
     }
 
+//    @Test
+//    public void canCalculateMarkup() {
+//        assertEquals(0.00, shop.calculateMarkup(snaredrum));
+//    }
+
 }

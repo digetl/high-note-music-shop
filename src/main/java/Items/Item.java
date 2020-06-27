@@ -1,8 +1,5 @@
 package Items;
 
-
-import Shop.Shop;
-
 public class Item{
 
 
@@ -21,7 +18,5 @@ public class Item{
         this.name = name;
     }
 
-    public Double calculateMarkup(Double wholesalePrice, Double rrpPrice) {
-        return null;
-    }
+
 }

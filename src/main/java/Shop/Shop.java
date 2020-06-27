@@ -27,15 +27,11 @@ public class Shop implements ISell {
         return shopName;
     }
 
-    public void setShopName(String shopName) {
-        this.shopName = shopName;
-    }
-
     public int getStock() {
         return itemsForSale.size();
     }
 
-    public Double calculateMarkup(Double wholesalePrice, Double rrpPrice) {
-        return null;
+    public Double calculateMarkup(Item item) {
+        return 0.00;
     }
 }
