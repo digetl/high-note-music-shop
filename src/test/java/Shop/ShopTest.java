@@ -30,6 +30,15 @@ public class ShopTest {
     @Test
     public void canAddItemsToStock() {
         shop.addItemToStock(snaredrum);
+        assertEquals(1, shop.getStock());
+    }
+
+    @Test
+    public void canRemoveItemFromStock() {
+        shop.addItemToStock(snaredrum);
+        shop.removeItemFromStock(snaredrum);
+        assertEquals(0, shop.getStock());
+
     }
 
 }

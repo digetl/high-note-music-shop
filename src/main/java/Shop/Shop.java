@@ -19,6 +19,10 @@ public class Shop implements ISell {
         itemsForSale.add(item);
     }
 
+    public void removeItemFromStock(Item item) {
+        itemsForSale.remove(item);
+    }
+
     public String getShopName() {
         return shopName;
     }
