@@ -1,6 +1,6 @@
 package Items.Instruments.Percussion;
 
-public enum PercussionInst {
+public enum PercussionInst{
     SNAREDRUM1("Ludwig", 14, 7, "Basic Snare", 100.00, 200.00),
     SNAREDRUM2("Gretsch", 14, 7, "Great all rounder", 80.00, 160.00);
 

@@ -30,4 +30,9 @@ public class PercussionTest {
         assertEquals(PercussionInst.SNAREDRUM2, snaredrum.getPercussionInst());
     }
 
+    @Test
+    public void canPlaySound() {
+        assertEquals("Boom", snaredrum.playSound("Boom"));
+    }
+
 }

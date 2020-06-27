@@ -1,6 +1,8 @@
 package Items.Instruments.Percussion;
 
-public class Percussion {
+import Items.Instrument;
+
+public class Percussion extends Instrument {
 
     private String name;
     private PercussionInst percussionInst;
