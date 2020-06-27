@@ -6,8 +6,11 @@ import Shop.Shop;
 
 public class Item extends Shop implements ISell, IDiscount {
 
-    public Double calculateMarkup(Double markUp) {
-        return null;
+    private Double markUp;
+
+    public Double calculateMarkup(Double wholesalePrice, Double rrpPrice) {
+        markUp = rrpPrice - wholesalePrice;
+        return markUp;
     }
 
     public Double discountByAmount(Double amount) {
