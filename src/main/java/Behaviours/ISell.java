@@ -1,5 +1,5 @@
 package Behaviours;
 
 public interface ISell {
-    public String calculateMarkup(Double markUp);
+    public Double calculateMarkup(Double markUp);
 }
