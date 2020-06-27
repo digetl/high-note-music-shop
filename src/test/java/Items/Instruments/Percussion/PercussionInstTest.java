@@ -11,7 +11,7 @@ public class PercussionInstTest {
 
     @Before
     public void setUp() {
-        snaredrum = new Percussion("Ludwig big snare", PercussionInst.SNAREDRUM1);
+        snaredrum = new Percussion("Ludwig big snare", 100.00, 200.00, PercussionInst.SNAREDRUM1);
     }
 
 

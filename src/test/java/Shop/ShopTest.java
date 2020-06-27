@@ -15,10 +15,12 @@ public class ShopTest {
     private Shop shop;
     private ArrayList<Item> itemsForSale;
     private Percussion snaredrum;
+    private Item item1;
 
     @Before
     public void before() {
-        snaredrum = new Percussion("Ludwig big snare", PercussionInst.SNAREDRUM1);
+        snaredrum = new Percussion("Ludwig big snare", 200.00, 100.00, PercussionInst.SNAREDRUM1);
+        item1 = new Item("Snare1", 50.00,100.00);
         shop = new Shop("High Notes Music Shop", itemsForSale);
     }
 
@@ -41,9 +43,9 @@ public class ShopTest {
 
     }
 
-//    @Test
-//    public void canCalculateMarkup() {
-//        assertEquals(0.00, shop.calculateMarkup(snaredrum));
-//    }
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(50, shop.calculateMarkup(item1), 0.01);
+    }
 
 }

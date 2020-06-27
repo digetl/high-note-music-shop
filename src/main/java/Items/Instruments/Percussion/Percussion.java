@@ -8,8 +8,8 @@ public class Percussion extends Instrument {
     private PercussionInst percussionInst;
 
 
-    public Percussion(String name, PercussionInst percussionInst) {
-        super(name);
+    public Percussion(String name, Double wholesalePrice, Double rrpPrice, PercussionInst percussionInst) {
+        super(name, wholesalePrice, rrpPrice);
 
         this.percussionInst = percussionInst;
     }

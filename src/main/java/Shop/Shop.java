@@ -32,6 +32,8 @@ public class Shop implements ISell {
     }
 
     public Double calculateMarkup(Item item) {
-        return ;
+       Double rrp = item.getRrpPrice();
+       Double wholesale = item.getWholesalePrice();
+       return rrp - wholesale;
     }
 }
