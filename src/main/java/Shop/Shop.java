@@ -36,4 +36,14 @@ public class Shop implements ISell {
        Double wholesale = item.getWholesalePrice();
        return rrp - wholesale;
     }
+
+    public double calculateMarkupAllStock(Shop shop) {
+        double totalProfit = 0.00;
+
+        for (int counter = 0; counter < itemsForSale.size(); counter++) {
+            totalProfit += calculateMarkup(itemsForSale.get(counter));
+        }
+
+        return totalProfit;
+    }
 }

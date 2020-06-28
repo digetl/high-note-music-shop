@@ -19,7 +19,7 @@ public class ShopTest {
 
     @Before
     public void before() {
-        snaredrum = new Percussion("Ludwig big snare", 200.00, 100.00, PercussionInst.SNAREDRUM1);
+        snaredrum = new Percussion("Ludwig big snare", 100.00, 200.00, PercussionInst.SNAREDRUM1);
         item1 = new Item("DrumSticks", 10.00,20.00);
         shop = new Shop("High Notes Music Shop", itemsForSale);
     }
@@ -53,9 +53,16 @@ public class ShopTest {
 
         shop.addItemToStock(snaredrum);
         shop.addItemToStock(snaredrum);
-        shop.removeItemFromStock(snaredrum);
-        assertEquals(0, shop.calculateMarkupAllStock());
+        assertEquals(200, shop.calculateMarkupAllStock(shop), 0.01);
+    }
 
+    @Test
+    public void canCalculateMarkUpOnAllStock__InstrumentsAndItems(){
+
+        shop.addItemToStock(snaredrum);
+        shop.addItemToStock(snaredrum);
+        shop.addItemToStock(item1);
+        assertEquals(210, shop.calculateMarkupAllStock(shop), 0.01);
     }
 
 }
